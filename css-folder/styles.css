@@ -20,7 +20,7 @@ a {
 header {
     width: 100%;
     height: 300vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../Images/woman.webp);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)), url(../Images/gif4.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

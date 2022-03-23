@@ -334,3 +334,48 @@
         .placeholder {
             color: #fff;
         }
+        /* contact us page */
+        
+        #inputName,
+        #inputEmail,
+        #inputMessage {
+            border: 1px solid white;
+            background: gray;
+            color: white;
+            height: 7vh;
+            font-size: 1.5em;
+        }
+        
+        #inputName::placeholder,
+        #inputEmail::placeholder,
+        #inputMessage::placeholder {
+            color: white;
+        }
+        
+        #inputMessage {
+            height: 26vh;
+            padding-top: 3%;
+            padding-bottom: 23%;
+        }
+        
+        form {
+            height: vh;
+            padding: 1% 10% 20% 5%;
+        }
+        
+        #type,
+        #size,
+        #crust {
+            height: 5vh;
+            width: 90%;
+            font-size: 1em;
+            margin: 2%;
+        }
+        
+        #myNavbar {
+            color: white;
+        }
+        
+        #Home {
+            color: white;
+        }

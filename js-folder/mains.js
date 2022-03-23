@@ -1,7 +1,7 @@
 let pizzaPrice = {
-    small: 800,
-    medium: 1000,
-    large: 1200
+    small: 700,
+    medium: 950,
+    large: 1200,
 }
 
 let crustPrice = {

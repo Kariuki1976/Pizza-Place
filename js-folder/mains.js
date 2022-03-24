@@ -1,13 +1,16 @@
 let pizzaPrice = {
-    small: 700,
-    medium: 950,
+    small: 750,
+    medium: 900,
     large: 1200,
+    onePiecer: 250,
+    twoPiecer: 500,
+    regular: 650,
 }
 
 let crustPrice = {
     crispy: 100,
     stuffed: 150,
-    gluttenFree: 200
+    gluttenFree: 200,
 }
 
 class crust {
@@ -20,7 +23,7 @@ class crust {
 let toppingsPrice = {
     sausage: 50,
     mushroom: 100,
-    gorgonzola: 150
+    gorgonzola: 150,
 }
 
 class toppings {

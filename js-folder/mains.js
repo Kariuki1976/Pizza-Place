@@ -47,41 +47,58 @@ class order {
 let form = document.querySelector("form")
 
 form.addEventListener("submit", function(e) {
-    e.preventDefault()
-    let pizza = document.querySelector("#type").value
-    let size = document.querySelector("#size").value
-    let crustt = document.querySelector("#crust").value
-    let number = document.querySelector("#qty").value
-    let delivery = document.querySelector("#deliver")
-    let topppings = document.querySelectorAll(".toppps")
-    let toppingsArray = []
-    topppings.forEach(element => {
-        if (element.checked) {
-            let obj = new toppings(element.value)
-            toppingsArray.push(obj)
+        e.preventDefault()
+        let pizza = document.querySelector("#type").value
+        let size = document.querySelector("#size").value
+        let crustt = document.querySelector("#crust").value
+        let number = document.querySelector("#qty").value
+        let delivery = document.querySelector("#deliver")
+        let topppings = document.querySelectorAll(".toppps")
+        let toppingsArray = []
+        topppings.forEach(element => {
+            if (element.checked) {
+                let obj = new toppings(element.value)
+                toppingsArray.push(obj)
+            }
+        })
+
+        let newCrust = new crust(crustt)
+
+
+        let customerOrder = new order(pizza, size, toppingsArray, newCrust, number)
+
+        let toppingsTotal = []
+
+        customerOrder.toppings.forEach(item => {
+            toppingsTotal.push(item.toppingsPrice)
+        })
+        toppingsTotal = toppingsTotal.reduce((acc, item) => acc + item, 0)
+            // console.log(customerOrder)
+            // console.log(toppingsTotal)
+
+        let orderTotal = (customerOrder.pizzaPrice + customerOrder.crust.crustPrice + toppingsTotal) * parseInt(number)
+
+
+        if (delivery.checked) {
+            let delivery = 150;
+            orderTotal = orderTotal + delivery;
         }
+        console.log(orderTotal)
     })
+    //Form validation
 
-    let newCrust = new crust(crustt)
+$(document).ready(function() {
+    $("form#form").submit(function(event) {
+        event.preventDefault();
+        var name = $("input#name").val();
+        var email = $("input#email").val();
+        var message = $("textarea#subject").val();
+        if (name && email) {
+            alert(name + ", we have received your message. Thank you for shopping with us. We shall get back soon");
+        } else {
+            alert("Please enter your name and email!");
+        }
 
+    });
 
-    let customerOrder = new order(pizza, size, toppingsArray, newCrust, number)
-
-    let toppingsTotal = []
-
-    customerOrder.toppings.forEach(item => {
-        toppingsTotal.push(item.toppingsPrice)
-    })
-    toppingsTotal = toppingsTotal.reduce((acc, item) => acc + item, 0)
-        // console.log(customerOrder)
-        // console.log(toppingsTotal)
-
-    let orderTotal = (customerOrder.pizzaPrice + customerOrder.crust.crustPrice + toppingsTotal) * parseInt(number)
-
-
-    if (delivery.checked) {
-        let delivery = 150;
-        orderTotal = orderTotal + delivery;
-    }
-    console.log(orderTotal)
-})
+});

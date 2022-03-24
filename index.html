@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css-folder/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="Images/football.png">
+    <script src="/js-folder/mains.js"></script>
     <title>Pizza Place</title>
 </head>
 
@@ -222,33 +223,26 @@
 
     </div>
     <!-- Contact Us page -->
-    <div class="container-fluid mt-5 pt-5 " id="Contact ">
-        <h1 class="my-4 " style="text-align: center; font-size: 3em; ">CON<span class="underline ">TACT</span> US</h1>
+    <section style="background: white;margin: 0;color: gold;">
+        <div class="container" id="contact">
+            <h1>CONTACT US</h1>
 
-        <form target="_blank " class="col-md-8 " style="padding-left: 10%; ">
+            <div class="form">
+                <form action="" method="" id="form" onsubmit="" style="color: gold;">
+                    <label for="fname"></label>
+                    <input type="text" id="name" name="name" placeholder="Name..." required style="color: gold;">
 
-            <div class="row p-4 ">
-                <div class="form-group my-3 ">
-                    <label for="inputName " style="font-size: 2em; ">Name </label>
-                    <input type="text " class="form-control " id="inputName " placeholder="Name " value=" " required>
-                </div>
-                <div class="form-group my-3 ">
-                    <label for="inputEmail " style="font-size: 2em; ">Email </label>
-                    <input type="email " class="form-control " id="inputEmail " placeholder="Email " value=" " required>
-                </div>
+                    <label for="lname"></label>
+                    <input type="text" id="email" name="email" placeholder="Email..." required style="color: gold;"><br><br>
 
-
-                <div class="form-group my-3 ">
-                    <label for="inputMessage " style="font-size: 2em; ">Message</label>
-                    <input type="text " class="form-control " id="inputMessage " placeholder="Message " value=" " required>
-                </div>
-                <div style="padding-left: 46%; " class="col-auto my-3 ">
-                    <button type="submit " class="btn btn-danger mb-2 " id="btn ">Submit</button>
-                </div>
+                    <label for="subject"></label>
+                    <textarea id="subject" name="subject" placeholder=" Write Your message here" style="height:200px" required></textarea><br><br>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
             </div>
-        </form>
-    </div>
-
+        </div>
+    </section>
+    <!-- footer -->
     <footer class="bg-dark text-white text-center text-lg-start ">
 
         <div class="container p-4 ">

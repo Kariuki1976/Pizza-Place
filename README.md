@@ -1,4 +1,4 @@
-# **Delani Studio**
+# **PIZZA PLACE**
 
 By Emmanuel Kariuki
 ---
@@ -25,12 +25,12 @@ By Emmanuel Kariuki
 
 ## **Description**
 
-DELANI STUDIO is a website that explains what the studio is all about. It has a short description of the studio on the home page and also a logo to enable one identify the brand. It also has some text explaining who they are,how they work and gallery entailing previous projects.The portfolio has a few projects and their titles.The website has also linked their contacts in case one wants to reach out.
+Pizza Place is a website that enables users to order their Pizzas with different taste and toppings with options of delivery at a fee.
 ---
 
 ### **Live link**
 
-[Live Link](https://kariuki1976.github.io/Delani-Studio/)
+[Live Link](https://kariuki1976.github.io/Pizza-Place/)
 ---
 
 #### **Get Started**
@@ -39,7 +39,7 @@ To get a local copy to your machine.
 ---
 
 #### **Setup**
--Download or clone files from this repo.Repository link:[Delani Studio](https://github.com/Kariuki1976/Delani-Studio.git)
+-Download or clone files from this repo.Repository link:[Delani Studio](https://github.com/Kariuki1976/Pizza-Place.git)
 
 #### **Requirements**
 
@@ -55,15 +55,9 @@ Css for styling.
 Jquery for interaction
 ---
 
-### **Behavior Driven Development (BDD).**
--Enter your email
--Enter your name
--Type a text
--Pop up message will appear
-
 ### **License**
 
-To get the license click here [License](https://github.com/Kariuki1976/Delani-Studio/blob/master/License)
+To get the license click here [License](https://github.com/Kariuki1976/Pizza-Place/blob/master/License)
 ---
 
 

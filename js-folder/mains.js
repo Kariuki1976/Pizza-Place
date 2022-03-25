@@ -89,7 +89,7 @@ $(document).ready(function(submit()) {
             $("#add").show();
             $("#check").show();
             $(".detail").hide();
-            $("#orders.choise").show();
+            $("#orders.choice").show();
             $("#orders").show();
         }
 
@@ -195,7 +195,7 @@ $(document).ready(function(submit()) {
 
             if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
 
-                $("#finalmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliceryamount);
+                $("#finalmessage").append(person + ", We have received your order and it will be delivered to you at " + location + ". Prepare sh. " + deliceryamount);
                 $("#totalbill").hide();
                 $("#finalmessage").slideDown(1200);
             } else {

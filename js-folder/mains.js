@@ -32,14 +32,16 @@ function getPizza(name, size, crust, topping, total) {
 
 
 // order btn
-$(document).ready(function(submit()) {
+$(document).ready(function() {
     $("button#btn").click(function(event) {
         let pname = $("name").val();
         let psize = $("#size").val();
         let pcrust = $("#crust").val();
         let ptopping = [];
+        console.log("orderplace")
         $.each($("input[name='toppings']:checked"), function() {
             ptopping.push($(this).val());
+
         });
 
 
@@ -204,6 +206,5 @@ $(document).ready(function(submit()) {
                 $("button#delivery").show();
             }
         });
-        event.preventDefault();
     });
 });
